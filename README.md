@@ -737,8 +737,11 @@ echo "$backup_dir"
 | 项目 | 实际关系 | 当前状态 |
 |---|---|---|
 | [ElevenLabs](https://elevenlabs.io/docs/overview/capabilities/text-to-speech) | 实际用于 TTS 语音生成，并与 Telegram `sendVoice` 方向衔接 | 已能生成音色样本；MochiBot 内的自动发送逻辑仍在调试 |
+| [Sumika（@Sumikazzz）](https://x.com/Sumikazzz) 分享的 ElevenLabs v4 拟声提示词指南 | 为我们的亲密语音实验提供了提示词组织思路，包括用动作/体态标签配合台词、停顿和呼吸节奏，帮助 v4 表达低语、气声及亲吻等非语言声效 | 仅作提示词方法参考；原作者注明只经过少量验证、不保证效果。本文不转载完整提示词，也不公开私人音色、Voice ID 或语音样本 |
 | [Telegram Bot API：sendVoice](https://core.telegram.org/bots/api#sendvoice) | Telegram 语音条的发送接口依据 | 属于正式链路的一部分 |
 | [SoulX-Singer](https://github.com/Soul-AILab/SoulX-Singer) | 为“让同一音色唱歌”做过零样本歌声合成探索，研究了 prompt audio、MIDI、metadata 和清唱输出 | 没有纳入当前 Telegram 部署；它是歌声实验，不是普通 TTS |
+
+特别感谢 [Sumika（@Sumikazzz）](https://x.com/Sumikazzz) 公开分享 ElevenLabs v4 拟声提示词的实践经验。它直接启发了我们对气声、停顿和非语言声效的测试；我们只吸收其提示词设计思路，没有把原帖内容或作者的表达包装成自己的成果。
 
 SoulX-Singer 的探索也帮助我们确认：**说话音色、TTS、歌声合成是三类不同任务。** 钢琴 MIDI 只是音高和时值骨架，不是背景伴奏；目标 metadata 也不是简单把 `.mid` 改名为 `.json`。教程正文没有把尚未跑通的歌声实验包装成稳定功能。
 
