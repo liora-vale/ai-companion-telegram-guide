@@ -1,0 +1,33 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+
+# Private relationship and conversation data
+data/
+private/
+exports/
+chatgpt-export/
+*memory*.json
+*conversation*.json
+*.sqlite
+*.sqlite3
+*.db
+*.db-*
+
+# Audio and voice identity assets
+*.mp3
+*.wav
+*.m4a
+*.ogg
+*.opus
+
+# Backups and local runtime files
+*.bak
+*.backup
+*.log
+__pycache__/
+.DS_Store
