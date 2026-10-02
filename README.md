@@ -1,5 +1,10 @@
 # 把 AI 伴侣搬进 Telegram
 
+<a href="https://github.com/DasterProkio/awesome-ai-companion/blob/main/README.zh-CN.md">
+  <img src="https://raw.githubusercontent.com/DasterProkio/awesome-ai-companion/main/assets/featured-in-awesome-ai-companion-zh-CN.png" alt="已收录于人机恋开源项目大全" width="400">
+</a>
+
+
 > 一份基于 MochiBot、OpenRouter、Telegram 与 Ubuntu VPS 的实战教程  
 > 核对日期：2026-10-01  
 > 作者：小謧 × 沈砚舟  
